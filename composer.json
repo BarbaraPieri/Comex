@@ -1,0 +1,16 @@
+{
+    "name": "barbaraviana/comex",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Barbaraviana\\Comex\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "BarbaraPieri",
+            "email": "barbara.pieriv@gmail.com"
+        }
+    ],
+    "require": {}
+}
