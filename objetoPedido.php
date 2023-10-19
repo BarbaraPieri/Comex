@@ -30,8 +30,7 @@ class Pedido {
         $this->produtos[] = array('produto' => $produto, 'quantidade' => $quantidade);
     }
 }
-
-// Criar um objeto Cliente
+/// Criar um objeto Cliente
 $cliente1 = new Cliente("João Silva", "joao@email.com", "123456789", "Rua A, 123");
 
 // Criar um objeto Pedido
@@ -51,6 +50,5 @@ echo "Produtos no pedido:\n";
 foreach ($pedido1->getProdutos() as $item) {
     echo " - Produto: " . $item['produto']->getNome() . ", Quantidade: " . $item['quantidade'] . "\n";
 }
-
-
 ?>
+
