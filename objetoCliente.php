@@ -25,7 +25,7 @@ class Cliente {
     }
 
     public function getCelular() {
-        return $this->celular;
+        return $this->formatarCelular($this->celular);
     }
 
     public function getEndereco() {
@@ -53,6 +53,19 @@ class Cliente {
         $this->endereco = $endereco;
     }
 
+    //metodo para formatar celular
+    
+    public function formatarCelular($celular) {
+        // Remove todos os caracteres que não são dígitos
+        $celular = preg_replace('/\D/', '', $celular);
+
+        // Aplica a máscara (XX) XXXXX-XXXX
+        $numeroFormatado = preg_replace('/^(\d{2})(\d{5})(\d{4})$/', '($1) $2-$3', $celular);
+
+        return $numeroFormatado;
+    }
+
+
     // Método para adicionar compras
     public function adicionarCompra($valor) {
         $this->totalCompras += $valor;
@@ -60,7 +73,7 @@ class Cliente {
 }
 
 // Criar um objeto Cliente
-$cliente1 = new Cliente("João Silva", "joao@email.com", "123456789", "Rua A, 123");
+$cliente1 = new Cliente("João Silva", "joao@email.com", "01234567890", "Rua A, 123");
 
 // Exibir os valores atribuídos à classe
 echo "Nome do cliente: " . $cliente1->getNome() . "\n";
