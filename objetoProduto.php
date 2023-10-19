@@ -56,4 +56,6 @@ $produto1->removerProduto(5);
 // Exibir valor total em estoque
 echo "Valor total em estoque: $" . $produto1->calcularValorTotal() . "\n";
 
+
+
 ?>
