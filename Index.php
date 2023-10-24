@@ -3,14 +3,16 @@ require_once(__DIR__ . '/MeioDePagamento.php');
 require_once(__DIR__ . '/Pix.php');
 require_once(__DIR__ . '/Boleto.php');
 require_once(__DIR__ . '/CartaoDeCredito.php');
+require_once (__DIR__ . '/ExceptionCustomizada.php');
+
 
 $pix = new Pix();
-$valorDoPagamento = 200.50;
+$valorDoPagamento = 130.50;
 $pix->processarPagamento($valorDoPagamento);
 $pix->exibirRecibo($valorDoPagamento);
 
 $cartao = new CartaoDeCredito();
-$valorDoPagamento = 150.75;
+$valorDoPagamento = null;
 $cartao->processarPagamento($valorDoPagamento);
 $cartao->exibirRecibo($valorDoPagamento);
 
