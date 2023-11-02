@@ -3,7 +3,7 @@
 
 use PHPUnit\Framework\TestCase;
 use Barbaraviana\Comex\classes\pagamento\Produto;
-use InvalidArgumentException;
+
 
 
 class ProdutoTest extends TestCase

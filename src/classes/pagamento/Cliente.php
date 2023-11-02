@@ -100,7 +100,7 @@ class Cliente {
 
 try {
     // Criar um objeto Cliente
-    $cliente1 = new Cliente("João Silva", "joao@email.com", "01234567890", "Rua A, 123");
+    $cliente1 = new Cliente("João Silva", "joao@email.com", "12345678911", "Rua A, 123");
 
     // Exibir os valores atribuídos à classe
     echo "Nome do cliente: " . $cliente1->getNome() . "\n";
@@ -110,10 +110,10 @@ try {
     echo "Total de compras do cliente: R$" . $cliente1->getTotalCompras() . "\n";
 
     // Adicionar uma compra de R$100 ao cliente
-    // $cliente1->adicionarCompra(100);
+     $cliente1->adicionarCompra(100);
 
      // Adicionar uma compra de valor negativo ao cliente
-     $cliente1->adicionarCompra(-100);
+     //$cliente1->adicionarCompra(-100);
 
     // Exibir o novo total de compras
     echo "Novo total de compras do cliente: R$" . $cliente1->getTotalCompras() . "\n";
