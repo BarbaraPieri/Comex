@@ -1,9 +1,9 @@
 <?php
-require_once(__DIR__ . '/MeioDePagamento.php');
-require_once(__DIR__ . '/Pix.php');
-require_once(__DIR__ . '/Boleto.php');
-require_once(__DIR__ . '/CartaoDeCredito.php');
-require_once (__DIR__ . '/ExceptionCustomizada.php');
+
+use Barbaraviana\Comex\classes\pagamento\Pix;
+use Barbaraviana\Comex\classes\pagamento\CartaoDeCredito;
+use Barbaraviana\Comex\classes\pagamento\Boleto;
+
 
 
 $pix = new Pix();

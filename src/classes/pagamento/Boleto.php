@@ -1,6 +1,9 @@
 <?php
 
-require_once(__DIR__ . '/MeioDePagamento.php');
+namespace Barbaraviana\Comex\classes\pagamento;
+
+use Barbaraviana\Comex\classes\pagamento\interface\MeioDePagamento;
+
 
 class Boleto implements MeioDePagamento {
     public function processarPagamento($valor) {

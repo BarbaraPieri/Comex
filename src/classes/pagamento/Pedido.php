@@ -1,7 +1,7 @@
 <?php
-
-require_once(__DIR__ . '/objetoCliente.php');
-require_once(__DIR__ . '/objetoProduto.php');
+namespace Barbaraviana\Comex\classes\pagamento;
+use Barbaraviana\Comex\classes\pagamento\cliente;
+use Barbaraviana\Comex\classes\pagamento\Produto;
 
 class Pedido {
     private $id;

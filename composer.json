@@ -12,5 +12,7 @@
             "email": "barbara.pieriv@gmail.com"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "phpunit/phpunit": "10"
+    }
 }

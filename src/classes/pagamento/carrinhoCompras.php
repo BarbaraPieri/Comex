@@ -1,7 +1,6 @@
 <?php
 
-require_once(__DIR__ . '/objetoCliente.php');
-require_once(__DIR__ . '/objetoProduto.php');
+use Barbaraviana\Comex\classes\pagamento\Produto;
 
 
 class CarrinhoDeCompras {

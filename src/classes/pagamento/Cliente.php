@@ -1,5 +1,9 @@
 <?php
 
+namespace Barbaraviana\Comex\classes\pagamento;
+use InvalidArgumentException;
+use LogicException;
+
 class Cliente {
     private $nome;
     private $email;

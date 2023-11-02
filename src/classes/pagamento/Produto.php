@@ -1,4 +1,9 @@
 <?php
+
+namespace Barbaraviana\Comex\classes\pagamento;
+use InvalidArgumentException;
+
+
 class Produto {
     private $nome;
     private $preco;
