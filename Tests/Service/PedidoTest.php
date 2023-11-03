@@ -36,7 +36,7 @@ class PedidoTest extends TestCase
         $this->assertCount(1, $pedido->getProdutos());
 
         // Remove o produto do pedido
-        $pedido->removerProduto($produto, 100);
+        $pedido->removerProduto($produto, 8);
 
         // Verifica se o produto foi removido com sucesso
         $this->assertCount(0, $pedido->getProdutos());

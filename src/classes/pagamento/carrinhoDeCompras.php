@@ -1,6 +1,5 @@
 <?php
-
-use Barbaraviana\Comex\classes\pagamento\Produto;
+namespace Barbaraviana\Comex\classes\pagamento;
 
 
 class CarrinhoDeCompras {
@@ -54,25 +53,25 @@ class CarrinhoDeCompras {
 
 
 // Crie objetos da classe Produto
-$produto1 = new Produto("Produto A", 10.0, 2);
-$produto2 = new Produto("Produto B", 20.0, 2);
+//$produto1 = new Produto("Produto A", 10.0, 2);
+//$produto2 = new Produto("Produto B", 20.0, 2);
 
 // Crie um objeto da classe CarrinhoDeCompras
-$carrinho = new CarrinhoDeCompras();
+//$carrinho = new CarrinhoDeCompras();
 
 // Adicione produtos ao carrinho
-$carrinho->adicionarProduto($produto1, 2);
-$carrinho->adicionarProduto($produto2, 1);
+//$carrinho->adicionarProduto($produto1, 2);
+//$carrinho->adicionarProduto($produto2, 1);
 
 // Calcule os valores
-$subtotal = $carrinho->calcularSubtotal();
-$desconto = $carrinho->calcularDesconto(10); // 10% de desconto
-$frete = $carrinho->calcularFrete(5); // Frete de $5
-$total = $carrinho->calcularTotal(10, 5); // Desconto de 10% e frete de $5
+//$subtotal = $carrinho->calcularSubtotal();
+//$desconto = $carrinho->calcularDesconto(10); // 10% de desconto
+//$frete = $carrinho->calcularFrete(5); // Frete de $5
+//$total = $carrinho->calcularTotal(10, 5); // Desconto de 10% e frete de $5
 
 // Exiba os valores calculados
-echo "Subtotal: $" . $subtotal . "\n";
-echo "Desconto: $" . $desconto . "\n";
-echo "Frete: $" . $frete . "\n";
-echo "Total: $" . $total . "\n";
+//echo "Subtotal: $" . $subtotal . "\n";
+//echo "Desconto: $" . $desconto . "\n";
+//echo "Frete: $" . $frete . "\n";
+//echo "Total: $" . $total . "\n";
 ?>
