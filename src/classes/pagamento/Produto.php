@@ -53,34 +53,5 @@ class Produto {
     }
 }
 
-try{
-    // Criar um objeto Produto
-    $produto1 = new Produto("Produto A", 10.0, 5);
-
-    // Exibir informações iniciais do produto
-    echo "Nome do produto: " . $produto1->getNome() . "\n";
-    echo "Preço do produto: $" . $produto1->getPreco() . "\n";
-    echo "Quantidade em estoque: " . $produto1->getQuantidadeEstoque() . "\n";
-
-    // Adicionar 10 unidades do produto
-    $produto1->adicionarProduto(10);
-
-    echo "Quantidade total em estoque após adicionar produtos: " . $produto1->getQuantidadeEstoque(). "\n";
-
-    // Adicionar -8 unidades do produto
-    $produto1->adicionarProduto(-8);
-
-    // Remover -5 unidades do produto (deve lançar  uma exceção)
-    $produto1->removerProduto(-5);
-
-    //Remover 600 unidades (deve lançar uma exceção)
-    $produto1->removerProduto(600);
-    
-    
-} catch (InvalidArgumentException  $e){
-    echo "Erro ". $e->getMessage() ."\n";
-}
-// Exibir valor total em estoque
-echo "Valor total em estoque: $" . $produto1->calcularValorTotal() . "\n";
 
 ?>
