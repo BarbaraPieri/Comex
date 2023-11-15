@@ -19,4 +19,5 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 }
 ?>
-    <button onclick="window.location.href='index.html'">Voltar à Página Inicial</button>
+
+    <button onclick="window.location.href='index.html'"class="blue">Voltar à Página Inicial</button>

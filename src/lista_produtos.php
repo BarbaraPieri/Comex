@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Produtos</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-
-    <h1>Lista de Produtos Disponíveis</h1>
+    <header>
+        <h1 class="titulo">Lista de Produtos Disponíveis</h1>
+    </header>
+    
 
     <?php
     try {
@@ -32,6 +35,6 @@
         $pdo = null;
     }
     ?>
-
+    <button onclick="window.location.href='index.html'"class="blue">Voltar à Página Inicial</button>
 </body>
 </html>
