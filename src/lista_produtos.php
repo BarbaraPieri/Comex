@@ -35,6 +35,6 @@
         $pdo = null;
     }
     ?>
-    <button onclick="window.location.href='index.html'"class="blue">Voltar à Página Inicial</button>
+     <button onclick="window.location.href='index.php'"class="yellow">Voltar à Página Inicial</button>
 </body>
 </html>
