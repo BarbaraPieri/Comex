@@ -1,0 +1,132 @@
+
+:root{
+
+    --color-primaria: #FFFEFE;
+    --color-secundaria:#11A656;
+    --fonte-primaria: 'Inter';
+
+
+}
+.titulo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: black;
+    color: #FFFEFE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+
+}
+.main.apresentacao{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+.main.imagem{
+    width: 100%;
+    }
+    
+.main.imagem_de_apresentacao{
+    left: 0px;
+    top: 0px;
+    width:100%
+    }
+.login {
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+    justify-content: space-evenly;
+    border: solid 2px slategray;
+    padding: 5px;
+    width: 738px;
+}
+
+.main.menu{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+button {
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Segoe UI';
+    font-weight: 800;
+    margin-top: 25px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+button.blue {
+    background-color: #3498db;
+}
+
+button.blue:hover{
+    background-color: #0f2d41;
+}
+
+button.pink {
+    background-color: palevioletred;
+}
+
+button.pink:hover {
+    background-color: rgb(92, 46, 61);
+}
+
+button.yellow {
+    background-color: yellow;
+}
+button.yellow:hover {
+    background-color: rgb(63, 63, 42);
+}
+
+input[type="submit" i] {
+    margin-top: 20px;
+    appearance: auto;
+    user-select: none;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    background-color:aqua;
+    color: buttontext;
+    white-space: pre;
+    padding-block: 5px;
+    padding-inline: 7px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+    border-radius: 4px;
+}
+
+
+div{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:-webkit-any-link {
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Segoe UI';
+    font-weight: 800;
+    margin-top: 25px;
+    margin-left: 60px;
+    margin-right: 60px;
+    color: palevioletred;
+    cursor: pointer;
+    text-decoration: none;
+}
